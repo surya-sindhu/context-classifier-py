@@ -1,0 +1,47 @@
+#Prerequisites:
+
+Installed Python 2.7 or Python 3.5 and newer
+CLI with administrator privileges
+
+#Install Virtual Environment
+Linux:
+Debian, Ubuntu and other related distributions
+    sudo apt install python-virtualenv
+    
+CentOS, Red Hat, Fedora and related distributions
+    sudo yum install python-virtualenv
+
+MacOS:
+sudo python3 -m pip install virtualenv
+
+Windows:
+py -2 -m pip install virtualenv
+
+#To Create Virual Environment named "SA"
+cd to project directory
+python3 -m venv SA
+python -m venv SA
+
+#To Activate virtual Environment
+
+Linux and MacOS:
+. SA/bin/activate
+
+Windows:
+SA\Scripts\activate
+
+#To install Requirements
+pip install -r requirements.txt
+
+#To initiate Flask app
+
+Linux and MacOS:
+export FLASK_APP=app.py
+
+Windows:
+set FLASK_APP=app.py
+
+#To run Flask app
+flask run
+
+Check the running application on http://127.0.0.1:5000
