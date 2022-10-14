@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DATASET UPLOAD</title>
+<style>
+  html{
+    display: flex;
+    justify-content: left;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+    background-image: url('/static/images/Sentiment.webp');
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+
+ .buttons{
+  margin-top: 444px;
+  padding: 9px 14px;
+  border-radius: 16px;
+  color: black;
+  background-color: whitesmoke;
+  font-weight: bold;
+  font-size: 15px;    
+  margin: 0 3px;
+  cursor: pointer;
+  }
+.column {
+  position: absolute;
+  bottom: 540PX;
+  right: 30px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    width: 180px;
+  }
+  .top-right {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+  }
+  .bottom-right {
+    position: absolute;
+    bottom: 412PX;
+    right: 10px;
+  }
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .t-right {
+    position: absolute;
+    top: 123px;
+    right: 398px;
+  }
+  .p-right {
+    position: absolute;
+    top: 380px;
+    right: 1020px;
+  }
+  .radio-right {
+    position: absolute;
+    top: 265px;
+    right: 1130px;
+  }
+  .b-right {
+    position: absolute;
+    bottom: 260PX;
+    right: 10px;
+  }
+  img.animated-gif{
+    width: 420px;
+    height: 175px;
+  }
+
+
+  
+</style>
+</head>
+<body>
+  
+
+<!-- <div class="row">
+  <div class="column">
+    <img src="RT1.png" class="top" width="250" height="70">
+  </div>
+</div> -->
+
+<div class="top-right">
+  <img src="/static/images/RT1.png" class="top" width="250" height="70">
+</div>
+
+
+
+<h1 style="color: white">Custom Context Classifier </h1> 
+
+
+<div>
+  <form  method="post" enctype="multipart/form-data"> <br><br>
+    <fieldset style="height:195px">
+    <p style="color: white">List of lables for prediction (separated by commas)</p>  
+    <input type="text" name="labels" class="buttons"/><br><br>
+    <p style="color: white">Text input for prediction</p> 
+    <input type="text" name="text" class="buttons"/><br><br>
+    {{ response }}
+<input type="submit"class="buttons"/>
+    </fieldset>
+    
+
+    </form>
+  </form>
+</div>
+
+
+<div class="bottom-right">
+  <a target="_blank" href="SAwordcloud.png">
+    <img src="/static/images/SAwordcloud.png" alt="Cinque Terre" width="400" height="215">
+  </a>
+</div>
+
+<div class="p-right">
+  <p style="color: white">Sample inputs</p>
+  <a target="_blank" href="dataset.PNG">
+    <img src="/static/images/dataset.PNG" alt="Cinque Terre" width="500" height="205">
+  </a>
+</div>
+</div>
+</div>
+
+</html>
